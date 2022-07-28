@@ -1,14 +1,24 @@
-site_name : ReNaaS
+site_name : RENaaS
 nav: 
-  - "Home": index.md 
   - NREN:
-    - "Cabo Verde NREN": Essentials/index.md
-    - Entities and Concepts: Essentials/Concepts/index.md
-  - ReNaaS:
-    - "Vision": ITAdmin/index.md
-    - "Goals": ITAdmin/initial/index.md
+    - Entities and Concepts : nren/Concepts/index.md 
+    - CVNREN : nren/index.md
+  - RENaaS:
+    - "Vision" : renaas/index.md
+    - "Goals" : renaas/goals.md
+    - "Project Work" : renaas/work.md 
+    - "Project Results" : renaas/results.md
+    - "Advisory Board" : renaas/adv.md
+  - Particpants: 
+    - "TCD" : participants/TCD.md
+    - "UTA" : participants/uta.md
+    - "RNP/Vixphy" : participants/rnpvix.md
+  - Deliverables: 
+    - "Reports" : deliv/reports.md
+    - "Software" : deliv/sw.md
+
 theme:
-    name: cerulean
+    name: flatly
     nav_style: dark
 extra:
   generator: false
