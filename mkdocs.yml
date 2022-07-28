@@ -1,0 +1,15 @@
+site_name : ReNaaS
+nav: 
+  - "Home": index.md 
+  - NREN:
+    - "Cabo Verde NREN": Essentials/index.md
+    - Entities and Concepts: Essentials/Concepts/index.md
+  - ReNaaS:
+    - "Vision": ITAdmin/index.md
+    - "Goals": ITAdmin/initial/index.md
+theme:
+    name: cerulean
+    nav_style: dark
+extra:
+  generator: false
+        
