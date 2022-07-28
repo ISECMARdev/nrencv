@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>ManageUsers - RENaaS</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/docco.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">RENaaS</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">NREN <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../nren/Concepts/" class="dropdown-item">Entities and Concepts</a>
+</li>
+                                    
+<li>
+    <a href="../../nren/" class="dropdown-item">CVNREN</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">RENaaS <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../" class="dropdown-item">Vision</a>
+</li>
+                                    
+<li>
+    <a href="../goals.md" class="dropdown-item">Goals</a>
+</li>
+                                    
+<li>
+    <a href="../work.md" class="dropdown-item">Project Work</a>
+</li>
+                                    
+<li>
+    <a href="../results.md" class="dropdown-item">Project Results</a>
+</li>
+                                    
+<li>
+    <a href="../adv.md" class="dropdown-item">Advisory Board</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Particpants <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../participants/TCD.md" class="dropdown-item">TCD</a>
+</li>
+                                    
+<li>
+    <a href="../../participants/uta.md" class="dropdown-item">UTA</a>
+</li>
+                                    
+<li>
+    <a href="../../participants/rnpvix.md" class="dropdown-item">RNP/Vixphy</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Deliverables <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../deliv/reports.md" class="dropdown-item">Reports</a>
+</li>
+                                    
+<li>
+    <a href="../../deliv/sw.md" class="dropdown-item">Software</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#users" class="nav-link">Users</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#local-user-managment" class="nav-link">Local User Managment</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#action-on-users" class="nav-link">Action on users</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#import-users" class="nav-link">Import Users</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#users-roles" class="nav-link">Users Roles</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#add-users-to-role" class="nav-link">Add user(s) to Role</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#dissassign-users-from-role" class="nav-link">Dissassign user(s) from Role</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#externally-authenticated-users" class="nav-link">Externally authenticated users</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><img alt="Logo EZ2Cloud" src="../../images/ez2cloud2.png" /></p>
+<hr>
+
+<h2 id="users">Users</h2>
+<div style='text-align: justify;'>
+<p>User managment it is one of the mandatory configuration that is required as one of the primary task to be completed. Users account and their information will have a double perspective in EZ2Cloud. Indeed, user account are used in the authentication process and also to implement the Ownership Label concept. </p>
+<p>All the functionalities needed to manage user will be available under the User Managment Menu View. After click in this option <img  src="./images/ButtonMenuUser.png">  from the Main window side menu, the User Management View will be shown as the following image:</p>
+</div>
+
+<p><img alt="Image of Sharelabelproject" src="../images/ManageUsersView.png" /></p>
+<div style='text-align: justify;'>
+<p>At the top of the User Management View there are multiple button that allows manage users: add, edit, disable, search users. Next you'll find more details on each of the available action. Note that these users are the ones managed by EZ2Cloud. In later version you can use users managed by Third part servies such On-premise AD ou Azure AD. </p>
+</div>
+
+<p><img alt="Image of Sharelabelproject" src="../images/ManageUserControl.png" /></p>
+<h2 id="local-user-managment">Local User Managment</h2>
+<div style='text-align: justify;'> 
+<p>
+The following section describe action to be performed on a single on a limited group of users. It is best suited to small group of users. 
+</p>
+</div>
+<p>All the local users accounts information are presented in a table as shown in the follwing image: <img style="margin-top: 10px; margin-bottom: 10px; padding: 10px; border: 1px solid black" src="./images/UsersManagmentTable.png"><p>The user account information that is presented can be ordered by the fields: First Name, Last Name, Email. Just pass the mouse over the title corresponding to the field you want to sort and click on the button <img src="./images/IconSort.png"> to sort the account information in alphabetically ascending or descending order. <p>Also the information can be filtered by Departament, Role and Stauts. Do so by pass mouse over the title corresponding to the field you want to filter and click on the button <img src="./images/IconFilter.png"> then choose the values you want to filter by.
+Additionaly you can navigate to different pages by click in one this arrows <img style="margin-top: 10px; margin-bottom: 10px; padding: 10px; border: 1px solid black" src="./images/ButtonNav.png"> to move forward or backward. </p>
+<h3 id="user-status">User Status</h3>
+<div style='text-align: justify;'> 
+<p>
+The local users have a status that refers to the current state of the user regarding EZ2Cloud Plataform. The different status are: 
+</p>
+</div>
+
+<ul>
+<li><img src="./images/UserPending.png"> - After register user account an invitation email was sent and it waiting further user actions.  </li>
+<li><img src="./images/UserActive.png"> - Account has been created and it is currently in use. After the user accepts the invitation and actually set up the account.</li>
+<li><img src="./images/UserInactive.png "> - A user was disabled.</li>
+</ul>
+<h2 id="action-on-users">Action on users</h2>
+<div style='text-align: justify;'> 
+<p> The actions to be performed on the information user account will always started by selecting one or multiple users from the table. Selecting a user by just click the check-box at the row of the corresponding user or just click on multiple check-box or select all the users by click the check-box on the table header. </p>
+<p> The buttons will be disabled until one or more users is selected. Also the Add User button can be disable due to the fact that the Tenant has reach the maximum number of users the current subscripiton allows. In this case upon the Add icon you will see the <img src="./images/prohibition.png"> icon 
+</div>
+
+<p><img alt="Image of Sharelabelproject" src="../images/ManageUserControl.png" /></p>
+<ol>
+<li><strong>To Add User</strong> <img alt="Image of Sharelabelproject" src="../images/ButtonAdd.png" /> <p>Local users can be added one at a time by fill the fields showed in the following image. <img style="margin-top: 10px; margin-bottom: 10px; padding: 10px; border: 1px solid black" src="./images/ManageUserAdd.png"></p><p>An invititation will be sent to the provided email address. In order to login the user must proceed to EZ2Cloud follow the invitation link embeded in the message and set his password and other provied other information that will be requested.</p></li>
+<li><strong>To Edit User</strong> <img alt="Image of Sharelabelproject" src="../images/ButtonEdit.png" /> <p>Local users can be Edit to change a User account. A user with the Role Administrator can change the values of the Users account, filling values in the fields as show in the form on the image <img style="margin-top: 10px; margin-bottom: 10px; padding: 10px; border: 1px solid black" src="./images/ManageUserEdit.png">. It is not possible to change email address. </p></li>
+<li>
+<p><strong>To Disable User</strong> <img alt="Image of Sharelabelproject" src="../images/ButtonDisable.png" /> <p>From the user table select rows that represents the ones you wnat to disable and then click button <img style="margin-top: 10px; margin-bottom: 10px; padding: 10px; border: 1px solid black" src="./images/ButtonDisable.png">. You will see the following dialog 
+<img style="margin-top: 10px; margin-bottom: 10px; padding: 10px; border: 1px solid black" src="./images/ManageUserDisable.png"> where you must confirm to disable user. If you select multiple users the confirmation dialog will be show all the users selected <img style="margin-top: 10px; margin-bottom: 10px; padding: 10px; border: 1px solid black" src="./images/ManageUserDisableMulti.png"></p></p>
+</li>
+<li>
+<p><strong>To Reset Password</strong> <img alt="Image of Sharelabelproject" src="../images/ButtonReset.png" /> <p>From the user table select rows that represents the ones you wnat to reset password and then click button <img style="margin-top: 10px; margin-bottom: 10px; padding: 10px; border: 1px solid black" src="./images/ButtonReset.png">. You will see the following dialog 
+  <img style="margin-top: 10px; margin-bottom: 10px; padding: 10px; border: 1px solid black" src="./images/ManageUserReset.png"> where you must confirm the reset user operation. If you select multiple users the confirmation dialog will be show all the users selected 
+     <img style="margin-top: 10px; margin-bottom: 10px; padding: 10px; border: 1px solid black" src="./images/ManageUserResetMulti.png"></p></p>
+</li>
+</ol>
+<h2 id="import-users">Import Users</h2>
+<div style='text-align: justify;'> 
+<p>This is functionality to create users as a bulk process. Instead of creating users one each time the users are imported from a CSV file. The process only requires that you have a CSV file with all the data needed. For each user you want to create a line with the fields firstName, lastName, email and department separted by comma. </p>
+<p>To start import user click on the button <img style="border: 1px solid black" src="./images/ButtonImport.png">. You will see the initial modal dialog Import user data, as the follwing image</p><img  style="float: left;margin:10px;padding: 10px;border: 1px solid black" src="./images/ImportUsers1.png">
+<p>First you need to select the file containing the users data. Click Browse Files button. Then, from the File Chooser, select your account user data CSV file. Or just Drag and Drop  the CSV File in <img style="border: 1px solid black" src="./images/DragArea.png"> area. </p>
+<p>After select the CSV file you will be next pass to the next step with the modal window showing the name of file that was select and a button Next. Click the button Next the next step it is select the roles for the users. The window used for set the users rles has two list. At the rigth side the roles selected or the roles that all the users will have. At the left side the list of all existing Tenant roles. You can select or deselect a role by click on the arrows. After select the roles and click Next you will view a summary of all the users that was read from file as show in the following image. 
+<p>To confirm the user data and create the users just click on Sent Invitation button. </p> <img style="margin-top:10px;margin-bottom:10px;padding: 10px; border: 1px solid black" src="./images/ImportUsers5.png"></p>
+</div>
+
+<h3 id="more-about-import-users-process">More about Import Users Process</h3>
+<ol>
+<li>Multiple file to import - It is possible to import as much users from file you want in the same file or separated by different files. </li>
+<li>Role user - At the step of select Roles of the import users process the selected roles will be applied to all users on the file.</li>
+<li>Invitation - An email is send to the email address of each user on the file, the created account has Pending status. The Users will stay in Pending status until the account is actually confirmed. </li>
+<li>Users limit - The limit of users is defined by the Tenant plan. </li>
+</ol>
+<h2 id="users-roles">Users Roles</h2>
+<div style='text-align: justify;'> 
+<img style="float: left;margin-right: 20px;margin-top: 10px; margin-bottom: 10px; padding: 10px;" src="./images/ManageRoles.png">
+<p>User role define what each user is allowed to perform in EZ2Cloud. From the role of Administrator to User there are different predefined roles. It is up to the Administrator to assign one or more roles to each user. Let's look at the roles in a little more detail:</p>
+</div>
+
+<ol>
+<li><strong>Administrator</strong> - Users with this role has access to all features and functionalities. Can configure all the data required for a Tenant. Can change settings that impact all the Tenant users. Recommended for people who, in the context of a EZ2Cloud need full access to configure and setup the Tenant artifacts including sensitive and destructive actions like managing security or deleting data. </li>
+<li><strong>Project Admnistrator</strong> - Users with this role can manage project. Create, Change settings, Archive, Setup and install Sattelite Service. </li>
+<li><strong>Label Administrator</strong> - Users with this role will be responsible to manage the Labels. As the ownership labels are created from the user name the major concern of the users with this role is to actual manage the semantic labels. </li>
+<li><strong>User</strong> - Users will be able to work at the colaborative working area from the End-user view.</li>
+</ol>
+<div style='text-align: justify;'> 
+<p>
+These are the predefined roles the ones that can be used to assign one or more roles to each user. However, this is a task that can only be performed by a user with the role of Administrator. Normally the give user one or more roles it is done when the user is being created. But it is possible at any time change the users in a specific role.</p> 
+<p>From the role management window, (see image above) - click on the button
+<img style="border: 1px solid black" src="./images/UsersInRolesButtonPeq.png"> in the row corresponding the role you want to change. For example if clicked in the row for Project Administrator role you will see all the users as show in the image <img style="float: left;margin-right: 20px;margin-top: 10px; margin-bottom: 10px; padding: 10px;width:80%; border: 1px solid black" src="./images/UsersInRoleProject.png" > that currently has this role. Here you can Add more users to this roles or Remove the ones you don't want to have this role anymore.</p> 
+<p>There are no limits but  of course the role with access to functionalities that can affect all the Tenant users must be managed with care.</p>
+</div>
+
+<h2 id="add-users-to-role">Add user(s) to Role</h2>
+<div style='text-align: justify;'> 
+<p>To add users to a Role you must be in that Role View as was explain in the Users Roles section. So when viewing the Role and all the users as shown in the image <img style="float: left;margin-right: 20px;margin-top: 10px; margin-bottom: 10px; padding: 10px;width:80%;border: 1px solid black" src="./images/AddUserToRole.png"> click the Button Add above the user information table.  After you must select, from the presented list of available users,  to add one or more users to the selected role.
+</p>
+</div>
+
+<h2 id="dissassign-users-from-role">Dissassign user(s) from Role</h2>
+<div style='text-align: justify;'> 
+<p>At any time is is possible to Dissassign user(s) from a Role. To do this first you need to select the user of group of users you want to dissasign  as shown in the image <img style="float: left;margin-right: 20px;margin-top: 10px; margin-bottom: 10px; padding: 10px;width:80%;border: 1px solid black" src="./images/RemoveUsersFromRole.png"> click the Button Remove above the user information table. Next you will be prompted to confirm the procedure and remove the users from the role. So on the question Dissassignuser(s) from selected role? click the button Remove. If you click the button Cancel you will head back the Role View. 
+</p>
+<p>Of course, you must have at least one user with the Role Administrator.</p>
+</div>
+
+<h2 id="externally-authenticated-users">Externally authenticated users</h2>
+<div style='text-align: justify;'> 
+<p>No yet implemented
+</p>
+</div></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -4,26 +4,26 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>RENaaS</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>ManageLabels - RENaaS</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/docco.min.css">
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href=".">RENaaS</a>
+                <a class="navbar-brand" href="../..">RENaaS</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -38,11 +38,11 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="nren/Concepts/" class="dropdown-item">Entities and Concepts</a>
+    <a href="../../nren/Concepts/" class="dropdown-item">Entities and Concepts</a>
 </li>
                                     
 <li>
-    <a href="nren/" class="dropdown-item">CVNREN</a>
+    <a href="../../nren/" class="dropdown-item">CVNREN</a>
 </li>
                                 </ul>
                             </li>
@@ -51,23 +51,23 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="renaas/" class="dropdown-item">Vision</a>
+    <a href="../" class="dropdown-item">Vision</a>
 </li>
                                     
 <li>
-    <a href="renaas/goals.md" class="dropdown-item">Goals</a>
+    <a href="../goals.md" class="dropdown-item">Goals</a>
 </li>
                                     
 <li>
-    <a href="renaas/work.md" class="dropdown-item">Project Work</a>
+    <a href="../work.md" class="dropdown-item">Project Work</a>
 </li>
                                     
 <li>
-    <a href="renaas/results.md" class="dropdown-item">Project Results</a>
+    <a href="../results.md" class="dropdown-item">Project Results</a>
 </li>
                                     
 <li>
-    <a href="renaas/adv.md" class="dropdown-item">Advisory Board</a>
+    <a href="../adv.md" class="dropdown-item">Advisory Board</a>
 </li>
                                 </ul>
                             </li>
@@ -76,15 +76,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="participants/TCD.md" class="dropdown-item">TCD</a>
+    <a href="../../participants/TCD.md" class="dropdown-item">TCD</a>
 </li>
                                     
 <li>
-    <a href="participants/uta.md" class="dropdown-item">UTA</a>
+    <a href="../../participants/uta.md" class="dropdown-item">UTA</a>
 </li>
                                     
 <li>
-    <a href="participants/rnpvix.md" class="dropdown-item">RNP/Vixphy</a>
+    <a href="../../participants/rnpvix.md" class="dropdown-item">RNP/Vixphy</a>
 </li>
                                 </ul>
                             </li>
@@ -93,11 +93,11 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="deliv/reports.md" class="dropdown-item">Reports</a>
+    <a href="../../deliv/reports.md" class="dropdown-item">Reports</a>
 </li>
                                     
 <li>
-    <a href="deliv/sw.md" class="dropdown-item">Software</a>
+    <a href="../../deliv/sw.md" class="dropdown-item">Software</a>
 </li>
                                 </ul>
                             </li>
@@ -127,22 +127,27 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#overview" class="nav-link">Overview</a>
+            <li class="nav-item" data-level="2"><a href="#label-managment" class="nav-link">Label Managment</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#list-of-participants" class="nav-link">List of Participants</a>
+            <li class="nav-item" data-level="2"><a href="#add-label" class="nav-link">Add Label</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#project-innovation" class="nav-link">Project Innovation</a>
+            <li class="nav-item" data-level="2"><a href="#edit-label" class="nav-link">Edit Label</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#expected-impact" class="nav-link">Expected Impact</a>
+            <li class="nav-item" data-level="2"><a href="#remove-label" class="nav-link">Remove Label</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#search-label" class="nav-link">Search Label</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -151,72 +156,43 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p><img alt="imagem" src="../images/cv.png" /></p>
+<p><img alt="Logo EZ2Cloud" src="../../images/ez2cloud2.png" /></p>
 <hr>
 
-<h2>RENaaS Project Documentation</h2>
-
-<hr>
+<h2 id="label-managment">Label Managment</h2>
 <div style='text-align: justify;'> 
-<p>RENaaS, Research and Education Network as a Service for Developing Nations it is a project aims to design, implement, validate and showcase an architecture using an Emerging NREN off the west coast of Africa (Cape Verde).</p> By using an institution where regular internet connectivity is already present, a pilot implementation will showcase eduroam and many other functionalities to the academic community of different institutions on Cape Verde island.
 <p>
-In a break from traditional approaches, the project will use virtualization network functions running on clouds - in different geographical locations - in a multi homing approach. Although one of the goals of the project is to deploy eduroam in Cape Verde, GÉANT’s RARE and RNP’s NosFVeraTO 
-R&D main products will be deployed together to provide security and smart routing on cloud-based overlay networking - demonstrating how far a clean-slate NREN could go in reducing TCO. We believe that this approach has the potential of not only encouraging developing countries to deploy their NRENs, but also to produce a blueprint for consolidated NRENS - helping them to expand their reach and service catalogue in a cost-effective way. 
-</div>
-<h2 id="overview">Overview</h2>
-<div style='text-align: justify;'> 
-<p>The main goal of the project is to create, deploy and test a new framework for new NRENs which arise in developing countries. It will also provide a blueprint for existing NRENS to expand both connectivity and services to their member institutions while reducing the budget required to deliver these services. Our goal with a showcasing activity in Cape Verde is to build a community and to raise local awareness of other stakeholders in NRENs through the demonstration of cloud-centered services.</p>
-
-<p>
-Community-building and stakeholder awareness for supporting the creation of sustainable NRENs in developing countries can benefit from cloud-based quick deployment of relevant services, such as eduroam, where regular connectivity is already present. Our innovation strategy involves aggregating proven solutions from past and current NREN R&D projects, such as RARE and eduroam itself, with private cloud-based NFV developed in NosFVeraTO from Brazil’s NREN RNP [4] . Development efforts will mainly focus on: i) security; ii) services; and iii) network control & management of such a system. Our future ambition is that our open networking cloud-based NREN solution could be considered as a viable architecture by consolidated NRENs, such as MoRENET in Mozambique, and also by federations of NRENs like the West And Central African Research and Education Network WACREN.
+Click the menu option <img src="./images/Labels/OpLabel.png"> to access the Label Managment Main Window. As depicted in the image where you can find all funcionalities that allows <img  style="float: right;margin-left: 20px;margin-top: 10px; margin-bottom: 10px; padding: 10px;border: 1px solid black" src="./images/Labels/ManageLabelMain.png"> add, edit, remove a label, named label management actions. 
+Located in the upper area of the window you will find button that triggers the label managment actions. Also a table with the labels showed in the select language. Each line at this table is a label where is indicated:
 </p>
-
 </div>
 
-<hr>
+<ul>
+<li>Name - Identification of the label. Character string, containing a space that uniquely identifies a label. It is advisable to use one word or maximum two.</li>
+<li>Description - Short description that can be used to understand the meaning of the label.  </li>
+<li>Translations - Country flag icon that shows which translations are defined for the EZ2Cloud supported languages (French, German, Portuguese or English).</li>
+</ul>
+<div style='text-align: justify;'> 
+<p>
+The translations are not done automatically but they must be actually defined. So, Labels with no translation defined to a specific language will be displayed in the Tenant default language. To view all the labels in a different language just click and select the language from the select box.
+</p>
+</div>
 
-<h2 id="list-of-participants">List of Participants</h2>
-<p><img alt="Logos" src="images/logos.png" />&nbsp;&nbsp;&nbsp;</p>
-<table>
-<thead>
-<tr>
-<th>Participant No</th>
-<th>Organization name</th>
-<th>Short name</th>
-<th>Country</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1: Coordinator/Lead Partner</td>
-<td>College of the Holy and Undivided Trinity of Queen Elizabeth near Dublin</td>
-<td>TCD</td>
-<td>Ireland</td>
-</tr>
-<tr>
-<td>2: Participant</td>
-<td>Universidade Técnica do Atlântico</td>
-<td>UTA</td>
-<td>Cabo Verde</td>
-</tr>
-<tr>
-<td>3: Participant</td>
-<td>Rede Nacional de Ensino Pesquisa: PoP-ES @UFES</td>
-<td>RNP/Vixphy</td>
-<td>Brasil</td>
-</tr>
-</tbody>
-</table>
-<h2 id="project-innovation">Project Innovation</h2>
-<p>The current NREN context and enabling technologies ecosystem are introduced in a “what if” approach to highlight untapped innovation opportunities we are try to exploit in this proposal: To maximize flexibility and to reduce depreciation of technology, we adopt the principle of “deploy in software where possible; deploy in hardware where necessary”. The main physical device that needs to be deployed is an edge platform that acts as an access point or conduit from the public and internal sides of the ReNaaS platform. </p>
+<h2 id="add-label"><strong>Add Label</strong></h2>
+<p>To add a new Label, start by click in the button <img src="./images/Labels/btnAddLabel.png"> and it will be displayed the modal Window New Label. Labels can be added one at a time by filling in the fields depicted in the following image. <img  style="margin-left: 20px;margin-top: 10px; margin-bottom: 10px; padding: 10px;border: 1px solid black" src="./images/Labels/addLabel.png"></p>
+<p>The window has two sections:</p>
 <ol>
-<li><a href="projectinov/index.md">NREN Services</a></li>
-<li><a href="projectinov/network.md">Programmability of Network Equipment and Infrastructures </a></li>
-<li><a href="projectinov/access.md">Access Networks</a></li>
+<li><em>Label Description</em> - As the name implies this section it is where you descbribe the Label. And this is done by fill the name, a short description or the meaning of the label amd the color to be associated with. It is mandatory to fill all fields in this section to create a label. The language that will be used to it is showed with Language caption. After filling the fields you can just click the button Save and your label will be add with. Although no translation is added, the label it is defined in the language the label was created. </li>
+<li><em>Label Translation</em> - Allows to add multiple translations to EZ2Cloud supported languages: Portuguese, French, English, and German. The translation can be set when creating a new label. To do so after fill the label description click the button Add. Then the New Label Window will change as the following image shows.  <img  style="margin-left: 20px;margin-top: 10px; margin-bottom: 10px; padding: 10px;border: 1px solid black" src="./images/Labels/addLabel3.png"> Click the select the language to be set the translation, for example German. And then the modal Window will be expandanded and it will be possible to fill in the translation, then click button Add.<img  style="margin-left: 20px;margin-top: 10px; margin-bottom: 10px; padding: 10px;border: 1px solid black" src="./images/Labels/addLabel4.png"> The same can be repetead for each language you want a translation. The result will be as depicted in the image. After add all the translations click button Save. Click Save and Add will add the new Label and allow to add more labels without having to close and reopen the modal Window.</p></li>
 </ol>
-<h2 id="expected-impact">Expected Impact</h2>
-<p>As far as strategically positioning NRENs, the main impact is to lower the bar for new NRENs to arise in developing countries, as well as to provide a blueprint for existing NRENS to expand both connectivity and services to their member institutions with much reduced impact to their budget. Our goal with a showcasing activity in Cape Verde is to develop both community building and an approach for raising local awareness of other stakeholders in NRENs through the demonstration of cloud-centered services. Before testing in Cape Verde, the RENaaS solution will first be verified by TCD in Ireland. This will allow the RENaaS solution to be functional validated prior to trialing with real users in Cape Verde. </p>
-<p><img alt="Image of project" src="images/inov.png" /></p></div>
+<h2 id="edit-label"><strong>Edit Label</strong></h2>
+<p>Labels can be edited one at a time or by selecting multiple labels. You can either select only a label or multiple labels by select a row or multiple rows and then click the button <img src="./images/Labels/btnEditLabel.png"> <img style="margin-top: 10px; margin-bottom: 10px; padding: 10px; border: 1px solid black" src="./images/Labels/editLabel.png"> if you have selected multiple labels you will be able to access each one of them simply by clicking on the radio on the right side of the label name. In addition to being able to change the description of a label, you can also add new translations.</p>
+
+<h2 id="remove-label"><strong>Remove Label</strong></h2>
+<p>From the label table select rows that represents labels you want to remove, click button <img src="./images/Labels/btnRemoveLabel.png">. You will see the following dialog <img style="margin-top: 10px; margin-bottom: 10px; padding: 10px; border: 1px solid black" src="./images/Labels/removeLabel.png"> prompt to confirm the remove action. If you select multiple labels the confirmation dialog will be show all the labels selected.</p>
+
+<h2 id="search-label"><strong>Search Label</strong></h2>
+<p>You can search over the list of labels. This search is done by the name and language that the user has selected. To do this, just write the text corresponding to the Label you are looking for, press enter and the table will show only the labels that match the search result, such as the example in the image below:<img style="margin-top: 10px; margin-bottom: 10px; padding: 10px; border: 1px solid black" src="./images/Labels/SearchResult.png"></div>
             </div>
         </div>
 
@@ -225,11 +201,11 @@ Community-building and stakeholder awareness for supporting the creation of sust
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = ".",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -294,8 +270,3 @@ Community-building and stakeholder awareness for supporting the creation of sust
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.3.1
-Build Date UTC : 2022-07-28 12:38:56.220536+00:00
--->

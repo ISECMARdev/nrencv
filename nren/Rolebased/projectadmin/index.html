@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Projectadmin - RENaaS</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/docco.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">RENaaS</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">NREN <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Concepts/" class="dropdown-item">Entities and Concepts</a>
+</li>
+                                    
+<li>
+    <a href="../../" class="dropdown-item">CVNREN</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">RENaaS <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../renaas/" class="dropdown-item">Vision</a>
+</li>
+                                    
+<li>
+    <a href="../../../renaas/goals.md" class="dropdown-item">Goals</a>
+</li>
+                                    
+<li>
+    <a href="../../../renaas/work.md" class="dropdown-item">Project Work</a>
+</li>
+                                    
+<li>
+    <a href="../../../renaas/results.md" class="dropdown-item">Project Results</a>
+</li>
+                                    
+<li>
+    <a href="../../../renaas/adv.md" class="dropdown-item">Advisory Board</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Particpants <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../participants/TCD.md" class="dropdown-item">TCD</a>
+</li>
+                                    
+<li>
+    <a href="../../../participants/uta.md" class="dropdown-item">UTA</a>
+</li>
+                                    
+<li>
+    <a href="../../../participants/rnpvix.md" class="dropdown-item">RNP/Vixphy</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Deliverables <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../deliv/reports.md" class="dropdown-item">Reports</a>
+</li>
+                                    
+<li>
+    <a href="../../../deliv/sw.md" class="dropdown-item">Software</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#project-administrator-role" class="nav-link">Project Administrator Role</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#functionalities-in-this-role" class="nav-link">Functionalities in this Role</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#new-project" class="nav-link">New Project</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#configure-project-tags" class="nav-link">Configure Project Tags</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#edit-one-project" class="nav-link">Edit one Project</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#edit-multiple-projects" class="nav-link">Edit multiple Projects</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#archive-one-project" class="nav-link">Archive one Project</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#archive-multiple-projects" class="nav-link">Archive multiple Projects</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><img alt="Logo EZ2Cloud" src="../../../images/ez2cloud2.png" /></p>
+<hr>
+
+<h2 id="project-administrator-role">Project Administrator Role</h2>
+<div style='text-align: justify;'> 
+
+<p> Users with project administrator role will have access to functionalities that are for common user plus specifics funcionliaties of this role. By default a user in this role after successfull login will be presented the EZ2Cloud Dashboard as in the follwing image:
+</p>
+</div>
+
+<p><img alt="EZ2Cloud dabshboard" src="../../../images/Dashboard.svg" /></p>
+<h2 id="functionalities-in-this-role">Functionalities in this Role</h2>
+<div style='text-align: justify;'> 
+<p>
+Specific of this roles are all functionalities to manage projects. Capabilities to define all the settings and provide projects to the colaborative working is the main goal. After click on the menu Project users will view Projects overview with a summary of all projects available as the following image shows:
+</p>
+</div>
+
+<p><img alt="Projects" src="../../../images/admin/8.png" /></p>
+<h2 id="new-project">New Project</h2>
+<div style='text-align: justify;'>
+<p>
+To create a new project, click on the create project button <img src="../../images/admin/projects/AddIcon.png">  and a modal Window will be presetend as the following image. <img style="float: left;margin-right: 20px;margin-top: 10px; margin-bottom: 10px; padding: 10px; border-width: 1px;   border-color: black;   border-style: solid;" src="../../images/admin/projects/NewProjectModal.png"  width="70%">
+On this form the user must fill all the required data to create an EZ2Cloud project namely:
+<br>
+</p>
+</div>
+
+<ul>
+<li>Project Name - Identification of a project within a Tenant. This identification must be a valid alphanumeric character string without special characters like punctuation marks. Also the identification must be Unique.</li>
+<li>Description - Text with a maximum of 254 characters with a brief description of the Project.</li>
+<li>Local Network Path - Every EZ2Cloud project must have a mandatory binded shared network folder. This is the shared network managed by the company and whose content will be used to obtain the metadata from which the file and folder structure for the project is created.</li>
+<li>Internal Username - Username to be used, if the shared network folder needs credentials to authenticate like a specific user account.</li>
+<li>Internal Password -  Password to be used, if the shared network folder needs credentials to authenticate like a specific user account.</li>
+<li>End Date - As a working unit the project should be in active state for a limited periodo of time. The start data will be the date it is created and end date can be filled on this field by the user with any valid date. </li>
+<li>End Alert Date - The Project Unit has an alert that is triggered by how many days are left until the end of the project. This alert is configurable by assigning in this field the number that represents how many days from the end date it should start receiving notifications.</li>
+<li>Assign Sattelite Server - Set the sattelite server that will be responsible to collecting and sending the metadata to EZ2Cloud. </li>
+<li>Assigned Labels - The collection of Semantic Label that can be used on the File Explorer.</li>
+<li>Assigned Users - Which user will be working on this project and also the users that can be used on performing ownership labelling.</li>
+</ul>
+<h2 id="configure-project-tags">Configure Project Tags</h2>
+<div style='text-align: justify;'>
+<p>Configure Projets Tags is the definition of creating the collection of Semantic and Ownership Labels will be provided to the user on the File Explorer to perform labelling taks.</p>
+</div>
+
+<h3 id="assigned-labels">Assigned Labels</h3>
+<div style='text-align: justify;'>
+<p>To create the Semnantic Label collection you must first have create Labels for your Tenant. Assigned Labels represents the collection. For a new Project you must create the Assigned label as follow: first click the button <img src="../../images/admin/projects/ButtonLabel.png">  and the New Project modal Window will be extended and it will be add the view as the following image. <img style="padding: 25px; border-width: 1px; border-color: black;border-style: solid" src="../../images/admin/projects/AddLabelNewProjectModal.png"></p>
+<p style="padding-top: 20px">On this left, a list of all Semantic Label as defined for the Tenant. On the right side, the selected Semantic Label that will be available on the Collaborative working area or File Explorer. To move a label from one side to another please use the Arrows.</p>
+</div>
+
+<h3 id="assigned-users">Assigned Users</h3>
+<div style='text-align: justify;'>
+
+<p>To create the Ownership Label collection you must first have create Users for your Tenant. For a new Project you must create Assigned Users by first click the button <img src="../../images/admin/projects/ButtonUsers.png">  and a modal Window will be presetend as the following image. <img style="padding: 35px; border-width: 1px; border-color: black;border-style: solid" src="../../images/admin/projects/AddUsersNewProjectModal.png">
+On this left, a list of all Ownership Labels as defined for the Tenant. On the right side, the selected Ownership Label that will be available on the Collaborative working area or File Explorer. To move a label from one side to another please use the Arrows.</p>
+</div>
+
+<h2 id="edit-one-project">Edit one Project</h2>
+<div style='text-align: justify;' >
+<p>
+The user can edit some of the data elements that define an EZ2Cloud either by double click in a line of the projects overview table or by select a project in the check box at the beginig of the line and then click on button <img src="../../images/admin/projects/EditIcon.png">. 
+This will present the Edit Project modal window loaded with the project data in the fields as shown in the follwing image 
+<img style="margin-right: 7px;margin-top: 40px;;margin-bottom: 40px; padding: 10px; border-width: 1px; border-color: black;   border-style: solid"  src="../../images/admin/projects/EditProjectModal.png" >
+</p>
+</div>
+
+<h2 id="edit-multiple-projects">Edit multiple Projects</h2>
+<div style='text-align: justify;'>
+<p style="padding-top: 20px">
+After click on the check-box in a line of project overview table the user is selecting a project. The user can select multiple line or projects and then click button <img src="../../images/admin/projects/EditIcon.png">. 
+This will present the Edit Project modal window loaded with the project data of all the projects that was selected as shown in the follwing image 
+<img style="float: left;margin-right: 7px;margin-top: 40px; padding: 10px; border-width: 1px;   border-color: black;   border-style: solid"  src="../../images/admin/projects/EditProjectVarModal.png" >
+</p>
+</div>
+
+<h2 id="archive-one-project">Archive one Project</h2>
+<div style='text-align: justify;'>
+<p style="padding-top: 20px">Projects that are no longer active must be archived. This means that they will be no more be visible on the main window of the File Explorer unless the user explicit click on the tab to view projects with status Archived.</p>
+
+<p>To archive one project, select the project and click on the button  <img src="../../images/admin/projects/ArchiveIcon.png">. First you will see the follwing dialog window asking to confirm that you want to archive the project. <img style="float: left;margin-right: 7px;margin-top: 40px;margin-bottom: 40px;  padding: 10px; border-width: 1px;   border-color: black;   border-style: solid" src="../../images/admin/projects/ArchiveModal.png"> Click button Archive to confirm or Cancel </p>
+</div>
+
+<h2 id="archive-multiple-projects">Archive multiple Projects</h2>
+<div style='text-align: justify;'>
+<p style="padding-top: 20px">Projects that are no longer active must be archived. This means that they will be no more be visible on the main window of the File Explorer unless the user explicit click on the tab to view projects with status Archived.</p>
+
+<p>To archive multiple projects, select all the projects you want to archive and click on the button  <img src="../../images/admin/projects/ArchiveIcon.png">. First you will see the follwing dialog window asking to confirm that you want to archive the project. <img style="margin-right: 7px;margin-top: 40px;margin-bottom: 10px; padding: 10px; border-width: 1px;   border-color: black;   border-style: solid"  src="../../images/admin/projects/ArchiveModalVar.png"> Click button Archive to confirm or Cancel </p>
+</div></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
