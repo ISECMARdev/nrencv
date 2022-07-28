@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>ReNaaS</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/color-brewer.min.css">
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href=".">ReNaaS</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem active">
+                                <a href="." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">NREN <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="Essentials/" class="dropdown-item">Cabo Verde NREN</a>
+</li>
+                                    
+<li>
+    <a href="Essentials/Concepts/" class="dropdown-item">Entities and Concepts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">ReNaaS <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="ITAdmin/" class="dropdown-item">Vision</a>
+</li>
+                                    
+<li>
+    <a href="ITAdmin/initial/" class="dropdown-item">Goals</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="Essentials/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#renaas-project-documentation" class="nav-link">ReNaaS Project Documentation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#overview" class="nav-link">Overview</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#list-of-participants" class="nav-link">List of Participants</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#description-of-work" class="nav-link">Description of Work</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><img alt="Logos" src="images/logos.png" />&nbsp;&nbsp;&nbsp;</p>
+<hr>
+
+<h2 id="renaas-project-documentation">ReNaaS Project Documentation</h2>
+<hr>
+<p>ReNaaS it is a project aims to design, implement, validate and showcase an architecture using an Emerging NREN off the west coast of Africa (Cape Verde). By using an institution where regular internet connectivity is already present, a pilot implementation will showcase eduroam and many other functionalities to the academic community of different institutions on Cape Verde island.</p>
+<p>In a break from traditional approaches, the project will use virtualization network functions running on clouds - in different geographical locations - in a multi homing approach. Although one of the goals of the project is to deploy eduroam in Cape Verde, GÉANT’s RARE and RNP’s NosFVeraTO 
+R&amp;D main products will be deployed together to provide security and smart routing on cloud-based overlay networking - demonstrating how far a clean-slate NREN could go in reducing TCO. We believe that this approach has the potential of not only encouraging developing countries to deploy their NRENs, but also to produce a blueprint for consolidated NRENS - helping them to expand their reach and service catalogue in a cost-effective way. </p>
+<h2 id="overview">Overview</h2>
+<div style='text-align: justify;'> 
+<p>The main goal of the project is to create, deploy and test a new framework for new NRENs which arise in developing countries. It will also provide a blueprint for existing NRENS to expand both connectivity and services to their member institutions while reducing the budget required to deliver these services. Our goal with a showcasing activity in Cape Verde is to build a community and to raise local awareness of other stakeholders in NRENs through the demonstration of cloud-centered services.</p>
+
+</div>
+
+<hr>
+
+<h2 id="list-of-participants">List of Participants</h2>
+<table>
+<thead>
+<tr>
+<th>Participant No</th>
+<th>Organization name</th>
+<th>Short name</th>
+<th>Country</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1: Coordinator/Lead Partner</td>
+<td>College of the Holy and Undivided Trinity of Queen Elizabeth near Dublin</td>
+<td>TCD</td>
+<td>Ireland</td>
+</tr>
+<tr>
+<td>2: Participant</td>
+<td>Universidade Técnica do Atlântico</td>
+<td>UTA</td>
+<td>Cabo Verde</td>
+</tr>
+<tr>
+<td>2: Participant</td>
+<td>Rede Nacional de Ensino Pesquisa: PoP-ES @UFES</td>
+<td>RNP/Vixphy</td>
+<td>Brasil</td>
+</tr>
+</tbody>
+</table>
+<h2 id="description-of-work">Description of Work</h2>
+<p>Community-building and stakeholder awareness for supporting the creation of sustainable NRENs in developing countries can benefit from cloud-based quick deployment of relevant services, such as eduroam, where regular connectivity is already present. Our innovation strategy involves aggregating proven solutions from past and current NREN R&amp;D projects, such as RARE and eduroam itself, with private cloud-based NFV developed in NosFVeraTO from Brazil’s NREN RNP [4] . Development efforts will mainly focus on: i) security; ii) services; and iii) network control &amp; management of such a system. Our future ambition is that our open networking cloud-based NREN solution could be considered as a viable architecture by consolidated NRENs, such as MoRENET in Mozambique, and also by federations of NRENs like the West And Central African Research and Education Network WACREN.</p>
+<h3 id="project-innovation">Project Innovation</h3>
+<p>The current NREN context and enabling technologies ecosystem are introduced in a “what if” approach to highlight untapped innovation opportunities we are try to exploit in this proposal: To maximize flexibility and to reduce depreciation of technology, we adopt the principle of “deploy in software where possible; deploy in hardware where necessary”. The main physical device that needs to be deployed is an edge platform that acts as an access point or conduit from the public and internal sides of the ReNaaS platform. </p>
+<ol>
+<li><a href="tenant.md">NREN Services</a></li>
+<li><a href="tag.md">Programmability of Network Equipment and Infrastructures </a></li>
+<li><a href="label.md">Access Networks</a></li>
+</ol>
+<h3 id="expected-impact">Expected Impact</h3>
+<p>As far as strategically positioning NRENs, the main impact is to lower the bar for new NRENs to arise in developing countries, as well as to provide a blueprint for existing NRENS to expand both connectivity and services to their member institutions with much reduced impact to their budget. Our goal with a showcasing activity in Cape Verde is to develop both community building and an approach for raising local awareness of other stakeholders in NRENs through the demonstration of cloud-centered services. Before testing in Cape Verde, the RENaaS solution will first be verified by TCD in Ireland. This will allow the RENaaS solution to be functional validated prior to trialing with real users in Cape Verde. </p>
+<p><img alt="Image of Sharelabelproject" src="images/inov.png" /></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.3.1
+Build Date UTC : 2022-07-28 01:54:32.420014+00:00
+-->
