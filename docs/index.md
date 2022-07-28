@@ -1,4 +1,4 @@
-![imagem](../images/cv.png)
+![imagem](./images/cv.png)
  
 <hr>
 
